@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript">
-   console.log = function(msg) {
+   <script type="text/javascript">
+    console.log = function(msg) {
         var ul = document.getElementById("log");
         var li = document.createElement("li");
         li.appendChild(document.createTextNode(msg));
@@ -14,8 +14,7 @@
             //
             // 기존 자바스크립트 코드를 이쪽으로 옮김.
             //
-        }
-    }
+    
       var x = 9.656;
       var a = x.toPrecision();
       var b = x.toPrecision(2);
@@ -25,10 +24,12 @@
       console.log(typeof(b) + " : " + b); // string : 9.7
       console.log(typeof(c) + " : " + c); // string : 9.656
       console.log(typeof(d) + " : " + d); // string : 9.65600
-    </script>
+}
+}   
+ </script>
 </head>
 <body>
-  <div>
+ <div>
         <textarea cols = "100" rows="40">
             var byteValue = 100;
             var shortValue = 30000;
@@ -50,7 +51,7 @@
             document.write(boolValue);
             document.write(stringValue);
             document.write(nullValue);
-            document.write(undefinedValue);
+            document.write(undefinedValue);    
 
             document.write(typeof byteValue);
             document.write(typeof shortValue);
@@ -61,7 +62,7 @@
             document.write(typeof boolValue);
             document.write(typeof stringValue);
             document.write(typeof nullValue);
-            document.write(typeof undefinedValue);
+            document.write(typeof undefinedValue);       
         </textarea>
     </div>
     <div>
@@ -69,6 +70,6 @@
     </div>
     <div>
         <ul id="log" style="list-style-type:circle"></ul>
-    </div>
+    </div>    
 </body>
 </html>
